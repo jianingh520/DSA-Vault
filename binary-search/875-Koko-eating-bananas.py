@@ -5,7 +5,7 @@ class Solution:
             #  if certain k (eating rate) works, koko can finish all within h hours, then all higher speeds will also works. This allow us to apply binary search on search space to find the minimum k where Koko can finish the bananas within the given hours.
             # edge case: 
                 # one pile 
-            # Time O(logM * N). Space O(1)
+            # Time O(logM * N) -> O(NlogM). Space O(1)
 
         l, r = 1, max(nums)
         res = max(nums)
